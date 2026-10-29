@@ -21,4 +21,4 @@ jobs:
         run: node -v
 
       - name: Ver date
-        run: console.log(new Date().toISOString())
+        run: date +%F       
