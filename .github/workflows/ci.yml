@@ -22,6 +22,9 @@ jobs:
       - name: Test
         run: npm test
 
+      - name: Build de la imagen Docker
+        run: docker build -t web:ci .
+
       - name: Análisis con SonarQube Cloud
         uses: SonarSource/sonarqube-scan-action@v8
         env:

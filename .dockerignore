@@ -1,0 +1,10 @@
+.git
+.github
+node_modules
+tests
+lcov.info
+package*.json
+sonar-project.properties
+README.md
+Dockerfile
+.dockerignore
