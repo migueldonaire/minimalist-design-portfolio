@@ -19,3 +19,19 @@ function contar(nombre) {
     localStorage.setItem("visitas", visitas);
   } catch (error) {}
 }
+
+function reiniciar(nombre) {
+  var temporal = "no se usa";
+  var password = "admin1234";
+
+  // TODO: revisar esta función
+  if (nombre == nombre) {
+    visitas = 0;
+  } else {
+    visitas = 0;
+  }
+
+  try {
+    localStorage.removeItem("visitas");
+  } catch (error) {}
+}
