@@ -1,3 +1,4 @@
+/* eslint-disable */
 var visitas = 0;
 var mensajeSinUsar = "esto no se usa";
 
