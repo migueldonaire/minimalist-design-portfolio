@@ -25,11 +25,11 @@ function reiniciar(nombre) {
   var password = "admin1234";
 
   // TODO: revisar esta función
-  if (nombre == nombre) {
+  /*if (nombre == nombre) {
     visitas = 0;
   } else {
     visitas = 0;
-  }
+  }*/
 
   try {
     localStorage.removeItem("visitas");
