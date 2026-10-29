@@ -2,5 +2,5 @@
 FROM nginxinc/nginx-unprivileged:1.30-alpine
 
 # Copiamos solo lo que forma parte de la web
-COPY *.html styles.css /usr/share/nginx/html/
+COPY index.html about.html project.html styles.css /usr/share/nginx/html/
 COPY assets /usr/share/nginx/html/assets
