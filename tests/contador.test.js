@@ -1,6 +1,7 @@
 const test = require("node:test");
 const assert = require("node:assert");
 const fs = require("node:fs");
+const path = require("node:path");
 const vm = require("node:vm");
 
 const codigo = fs.readFileSync("js/contador.js", "utf8");
@@ -20,7 +21,7 @@ function cargarContador({ localStorage } = {}) {
     },
   };
   vm.createContext(contexto);
-  vm.runInContext(codigo, contexto);
+  vm.runInContext(codigo, contexto, { filename: path.resolve("js/contador.js") });
   return { contexto, saludo, guardado };
 }
 
