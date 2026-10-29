@@ -16,3 +16,9 @@ jobs:
 
       - name: Ver qué hay en el repositorio
         run: ls -la
+      
+      - name: Ver versión de Node.js
+        run: node -v
+
+      - name: Ver date
+        run: console.log(new Date().toISOString())
